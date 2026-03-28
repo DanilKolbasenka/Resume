@@ -106,7 +106,7 @@ export const siteConfig = {
     title: "Малушко Алексей | Frontend-разработчик",
     description:
       "Персональное портфолио frontend-разработчика Алексея Малушко: проекты, навыки, контакты и аккуратная статическая архитектура на Next.js.",
-    siteUrl: "https://danilkolbasenka.github.io/portfolio",
+    siteUrl: "https://danilkolbasenka.github.io/Resume",
     previewImage: "/og-cover.svg",
     keywords: [
       "frontend разработчик",

@@ -1,9 +1,13 @@
 import { siteConfig } from "@/data/site";
 
 const EXTERNAL_PROTOCOL = /^(?:[a-z]+:)?\/\//i;
+const DEFAULT_PROD_BASE_PATH = "/Resume";
 
 export const basePath = (() => {
-  const value = process.env.NEXT_PUBLIC_BASE_PATH?.trim() ?? "";
+  const configuredValue = process.env.NEXT_PUBLIC_BASE_PATH?.trim() ?? "";
+  const value =
+    configuredValue ||
+    (process.env.NODE_ENV === "production" ? DEFAULT_PROD_BASE_PATH : "");
 
   if (!value || value === "/") {
     return "";

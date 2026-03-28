@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { contactLinks } from "@/data/contacts";
 import { siteConfig } from "@/data/site";
+import { withBasePath } from "@/lib/site";
 
 const prominentLinks = contactLinks.filter((link) => link.prominent);
 
@@ -15,7 +16,7 @@ export function HeroSection() {
           <div className="relative w-full overflow-hidden rounded-[32px] border border-border bg-white/85 p-3 shadow-soft">
             <div className="relative aspect-[5/4] overflow-hidden rounded-[28px]">
               <Image
-                src={siteConfig.profileImage.src}
+                src={withBasePath(siteConfig.profileImage.src)}
                 alt={siteConfig.profileImage.alt}
                 fill
                 priority

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowUpRightIcon, GithubIcon } from "@/components/icons";
 import { SectionHeading } from "@/components/section-heading";
 import { projects } from "@/data/projects";
+import { withBasePath } from "@/lib/site";
 
 export function ProjectsSection() {
   return (
@@ -24,7 +25,7 @@ export function ProjectsSection() {
             >
               <div className="aspect-[4/3] overflow-hidden border-b border-border bg-stone-950/95">
                 <Image
-                  src={project.image}
+                  src={withBasePath(project.image)}
                   alt={project.imageAlt}
                   width={960}
                   height={720}
