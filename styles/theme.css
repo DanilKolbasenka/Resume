@@ -1,0 +1,33 @@
+:root {
+  --background: #f5efe6;
+  --background-alt: #fcfaf6;
+  --foreground: #1c1917;
+  --muted: #57534e;
+  --border: rgba(28, 25, 23, 0.12);
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-strong: rgba(255, 255, 255, 0.92);
+  --accent: #0f766e;
+  --accent-strong: #115e59;
+  --accent-soft: rgba(15, 118, 110, 0.14);
+  --highlight: #d97706;
+  --highlight-soft: rgba(217, 119, 6, 0.16);
+  --shadow-soft: 0 24px 60px rgba(28, 25, 23, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-highlight: var(--highlight);
+  --color-highlight-soft: var(--highlight-soft);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-space-grotesk);
+  --shadow-soft: var(--shadow-soft);
+}
